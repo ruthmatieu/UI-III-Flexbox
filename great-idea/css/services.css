@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -55,6 +53,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+		line-height: 23px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,25 +62,20 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and
-start to refactor into flexbox */
-/*section, div, footer {
-	border: 1px solid red;
-}*/
-
 #container {
-	margin: 2% 5%;
+	margin: 2% 4%;
 }
 
-#container nav {
-	display: flex;
-	justify-content: flex-start;
+#container header nav {
+	margin: 1% 0;
+	vertical-align: middle;
+
 }
 
-#container nav a {
-	margin: 0 1%;
+#container header nav a{
+	margin: 0 2%;
 	text-decoration: none;
-  color: gray;
+	color: gray;
 }
 
 #container header nav a:hover{
@@ -89,84 +83,91 @@ start to refactor into flexbox */
 	transition: 0.5s;
 }
 
-#container nav img {
-	margin-left: 5%;
-	}
+#containter header nav .logo {
+	margin-right: auto;
 }
 
-#introduction {
-	padding: 50px 0;
-}
-#introduction div {
-	display: inline-block;
-	width: 50%;
-	vertical-align: middle;
+#container header nav .contact{
+	padding-right: 30%;
 }
 
-#introduction .main-heading {
-	display: inline-block;
-	width: 49.5%;
-	text-align: center;
+.heading-img img{
+	width: 100%;
 }
 
-#introduction .main-heading h1{
-	font-size: 50px;
+.heading-details {
+	padding: 15px 0;
 }
 
-#introduction .main-heading button{
-	box-shadow: 0px 10px 14px -7px #333;
+.heading-details h1 {
+	font-size: 25px;
+}
+
+.services-grid .row-1, .row-2, .row-3{
+	display: flex;
+	flex-direction: row;
+}
+
+.services-grid .row-1 .item-1, .item-2 {
+	border: 1px solid black;
+	background-color: #e8e9eb;
+	padding: 10px 10px;
+	margin: 2%;
+}
+
+.services-grid .row-2 .item-3, .item-4 {
+	background-color: #e8e9eb;
+	border: 1px solid black;
+	padding: 10px 10px;
+	margin: 2%;
+}
+
+.services-grid .row-3 .item-5, .item-6 {
+	background-color: #e8e9eb;
+	border: 1px solid black;
+	padding: 10px 10px;
+	margin: 2%;
+}
+
+.services-grid .row-1 button, .row-2 button, .row-3 button{
 	background-color: #FFF;
 	border-radius: 6px;
 	cursor: pointer;
 	color: #333;
-	padding: 13px 32px;
+	padding: 10px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-#introduction .main-heading button:hover{
+.services-grid .row-1 button:hover, .row-2 button:hover, .row-3 button:hover{
 	background-color: gray;
 	color: #FFF;
 	transition: 0.5s;
 }
 
-#introduction .image {
-	display: inline-block;
-	width: 49.5%;
-}
-
-#introduction img {
-	display: block;
-	margin-left: auto;
-  margin-right: auto;
-}
-
-#company-details {
+.facts-section {
 	display: flex;
+	flex-direction: row;
+	margin: 20px 0 80px 0;
 }
 
-.middle-img {
-	width: 100%;
+.facts-section .row-1 .list {
+	margin: 2% 0 0 3%;
 }
 
-.section-four {
-	display: flex;
-}
-
-footer h4 {
-	padding-top: 20px;
-}
-footer div {
-	padding: 10px 0 40px 0;
-}
-footer address p{
-	text-align: left;
-}
-footer ul li {
-	padding-bottom: 10px;
+.facts-section .row-1 .list ul li {
+	margin-bottom: 1%;
 }
 
 footer p {
-	padding-top: 20px;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+/**/
